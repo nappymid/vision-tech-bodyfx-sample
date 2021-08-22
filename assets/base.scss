@@ -366,7 +366,7 @@ h1,
 
 @media only screen and (min-width: 750px) {
   h1,
-.h1 {
+  .h1 {
     font-size: 4rem;
   }
 }
@@ -377,7 +377,7 @@ h2,
 
 @media only screen and (min-width: 750px) {
   h2,
-.h2 {
+  .h2 {
     font-size: 2.4rem;
   }
 }
@@ -388,7 +388,7 @@ h3,
 
 @media only screen and (min-width: 750px) {
   h3,
-.h3 {
+  .h3 {
     font-size: 1.8rem;
   }
 }
@@ -406,7 +406,7 @@ h5,
 
 @media only screen and (min-width: 750px) {
   h5,
-.h5 {
+  .h5 {
     font-size: 1.3rem;
   }
 }
@@ -698,14 +698,16 @@ summary::-webkit-details-marker {
 *:focus-visible {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem var(--color-background), 0 0 0.5rem 0.4rem var(--color-foreground-30);
+  box-shadow: 0 0 0 0.3rem var(--color-background),
+    0 0 0.5rem 0.4rem var(--color-foreground-30);
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 *:focus {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem var(--color-background), 0 0 0.5rem 0.4rem var(--color-foreground-30);
+  box-shadow: 0 0 0 0.3rem var(--color-background),
+    0 0 0.5rem 0.4rem var(--color-foreground-30);
 }
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
@@ -785,7 +787,7 @@ summary::-webkit-details-marker {
 }
 @media screen and (min-width: 990px) {
   .title,
-.title-wrapper-with-link {
+  .title-wrapper-with-link {
     margin: 5rem 0 3rem;
   }
 
@@ -1093,11 +1095,15 @@ deferred-media {
 }
 
 .button:focus-visible {
-  box-shadow: 0 0 0 0.1rem var(--color-button-border), 0 0 0 0.3rem var(--color-background), 0 0 0.5rem 0.4rem var(--color-foreground-30);
+  box-shadow: 0 0 0 0.1rem var(--color-button-border),
+    0 0 0 0.3rem var(--color-background),
+    0 0 0.5rem 0.4rem var(--color-foreground-30);
 }
 
 .button:focus {
-  box-shadow: 0 0 0 0.1rem var(--color-button-border), 0 0 0 0.3rem var(--color-background), 0 0 0.5rem 0.4rem var(--color-foreground-30);
+  box-shadow: 0 0 0 0.1rem var(--color-button-border),
+    0 0 0 0.3rem var(--color-background),
+    0 0 0.5rem 0.4rem var(--color-foreground-30);
 }
 
 .button,
@@ -1129,10 +1135,10 @@ deferred-media {
 
 /* Button - other */
 .button:disabled,
-.button[aria-disabled=true],
+.button[aria-disabled="true"],
 .button.disabled,
 .customer button:disabled,
-.customer button[aria-disabled=true],
+.customer button[aria-disabled="true"],
 .customer button.disabled {
   cursor: not-allowed;
   opacity: 0.5;
@@ -1206,13 +1212,17 @@ deferred-media {
 .field__input:focus-visible,
 .select__select:focus-visible,
 .field input:focus-visible {
-  box-shadow: 0 0 0 0.1rem var(--color-foreground-55), 0 0 0 0.3rem var(--color-background), 0 0 0.5rem 0.4rem var(--color-foreground-30);
+  box-shadow: 0 0 0 0.1rem var(--color-foreground-55),
+    0 0 0 0.3rem var(--color-background),
+    0 0 0.5rem 0.4rem var(--color-foreground-30);
 }
 
 .field__input:focus,
 .select__select:focus,
 .field input:focus {
-  box-shadow: 0 0 0 0.1rem var(--color-foreground-55), 0 0 0 0.3rem var(--color-background), 0 0 0.5rem 0.4rem var(--color-foreground-30);
+  box-shadow: 0 0 0 0.1rem var(--color-foreground-55),
+    0 0 0 0.3rem var(--color-background),
+    0 0 0.5rem 0.4rem var(--color-foreground-30);
 }
 
 .text-area,
@@ -1268,7 +1278,8 @@ deferred-media {
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
-  transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
+  transition: top var(--duration-short) ease,
+    font-size var(--duration-short) ease;
   color: var(--color-foreground-75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
@@ -1340,7 +1351,7 @@ deferred-media {
   resize: vertical;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: inline-block;
   width: auto;
   margin-right: 0.5rem;
@@ -1461,7 +1472,7 @@ input[type=checkbox] {
   margin: 0;
 }
 
-.quantity__input[type=number] {
+.quantity__input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -1532,6 +1543,8 @@ input[type=checkbox] {
 }
 
 .cart-count-bubble {
+  //   position: absolute;
+  //   background-color: var(--color-base-accent-1);
   background-color: #ff001d;
   color: var(--color-base-solid-button-labels);
   height: 1.7rem;
@@ -1712,12 +1725,12 @@ input[type=checkbox] {
   }
 
   .header__heading,
-.header__heading-link {
+  .header__heading-link {
     justify-self: start;
   }
 
   .header--top-center .header__heading-link,
-.header--top-center .header__heading {
+  .header--top-center .header__heading {
     justify-self: center;
   }
 }
@@ -1736,6 +1749,7 @@ input[type=checkbox] {
 }
 
 .header__icon span {
+  //   height: 100%;
   margin: 0 10px;
 }
 
@@ -1761,23 +1775,25 @@ input[type=checkbox] {
   height: 4.4rem;
   font-size: 1.25rem;
   text-decoration: none;
+  //   width: 4.4rem;
 }
 
 .header__icon--cart {
   position: relative;
   text-decoration: none;
-}
-.header__icon--cart-badge {
-  font-weight: 500;
-  font-size: 0.75rem;
-  background-color: #ff001d;
-  color: #fff;
-  height: 1.56rem;
-  width: 1.56rem;
-  border-radius: 0.78rem;
-  padding: 1px;
-}
 
+  &-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+    background-color: #ff001d;
+    color: #fff;
+    height: 1.56rem;
+    width: 1.56rem;
+    border-radius: 0.78rem;
+    padding: 1px;
+  }
+  //   margin-right: -1.2rem;
+}
 .header__divider {
   border-left: 2px solid black;
   color: white;
@@ -1785,7 +1801,6 @@ input[type=checkbox] {
   margin: auto;
   padding: 0 0.75rem;
 }
-
 @media screen and (max-width: 989px) {
   menu-drawer ~ .header__icons .header__icon--account {
     display: none;
@@ -1812,12 +1827,12 @@ menu-drawer + .header__search {
 
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
-.header--top-center > .header__search {
+  .header--top-center > .header__search {
     display: inline-flex;
   }
 
   .header:not(.header--top-center) > .header__search,
-.header--top-center * > .header__search {
+  .header--top-center * > .header__search {
     display: none;
   }
 }
@@ -1972,7 +1987,8 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__submenu {
-  transition: opacity var(--duration-default) ease, transform var(--duration-default) ease;
+  transition: opacity var(--duration-default) ease,
+    transform var(--duration-default) ease;
 }
 
 .header__submenu.list-menu {
@@ -2023,6 +2039,5 @@ details-disclosure > details {
   font-family: "LexendDeca";
   src: url("LexendDeca-Regular.tff") format("tff");
 }
-/*# sourceMappingURL=base.scss.map */
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=base.scss.map */

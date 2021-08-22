@@ -30,9 +30,12 @@
     margin: 0;
   }
 
+  /*changed inline flex to flex, justify content end */
+
   .list-menu--inline {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   summary.list-menu__item {
@@ -321,6 +324,7 @@
                                 {{ childlink.title | escape }}
                                 {% render 'icon-caret' %}
                               </summary>
+                              
                               <ul class="header__submenu list-menu motion-reduce">
                                 {%- for grandchildlink in childlink.links -%}
                                   <li>
@@ -349,6 +353,8 @@
     {%- endif -%}
 
     <div class="header__icons">
+      <div class="header__divider">|</div>
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -405,6 +411,8 @@
             render 'icon-bodyfx-cart'
         -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        <span>MY CART</span>
+
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
@@ -413,6 +421,7 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
+
       </a>
     </div>
   </header>
