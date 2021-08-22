@@ -7,7 +7,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -46,7 +46,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Sign up to our emails",
           "show_social": false,
           "enable_country_selector": true,
