@@ -1,5 +1,8 @@
 {
   "current": {
+    "colors_accent_1": "#ff001d",
+    "colors_accent_2": "#f41a2e",
+    "accent_icons": "text",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -23,7 +26,7 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo_b8d091c8-b211-4b77-94e7-c00373c27332.png",
-          "logo_width": 100,
+          "logo_width": 210,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
