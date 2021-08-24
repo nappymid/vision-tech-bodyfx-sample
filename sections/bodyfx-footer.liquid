@@ -1,16 +1,8 @@
-<footer class="footer" style="background-image:url({{section.settings.image | img_url:'1900x'}})" >
-    {% comment %} {%- if section.settings.image != blank -%}
-        <img 
-            class="footer__background"
-            src="{{section.settings.image | img_url : '1900x'}}"
-        >
-    {% endif %} {% endcomment %}
+<footer class="footer" style="background-image:url({{section.settings.image | img_url:'1900x'}})" > 
 
     <div class="footer__content footer__content__top page_width">
         <div class="footer__content footer__content__logo">
-            {%- if section.settings.logo != blank -%}
-                {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-    
+            {%- if section.settings.logo != blank -%}  
                 <img
                   src="{{ section.settings.logo | img_url: '210x' }}"
                   loading="lazy"
@@ -35,7 +27,12 @@
     </div>
     <div class="footer__content footer__content__bottom">
         <div class="footer__content footer__content__social">
-
+            <a href="https://facebook.com" class="footer__content__social__item" aria-describedby="a11y-external-message">
+                {%- render 'icon-facebook-bodyfx' -%}
+            </a>
+            <a href="https://facebook.com" class="footer__content__social__item" aria-describedby="a11y-external-message">
+                {%- render 'icon-instagram-bodyfx' -%}
+            </a>
         </div>
         <div class="footer__content footer__content__copywrite">
             <div>
@@ -45,7 +42,7 @@
             <p>Copyright 2020 Bravado Ventures LLC. All rights reserved.</p>
         </div>
         <div class="footer__content footer__content__vision-logo">
-            <img src="{{ 'vision-logo.png' | asset_img_url: '300x' }}">
+            <img src="https://cdn.shopify.com/s/files/1/0592/8792/9014/t/3/assets/vision-logo_300x.png?v=15809780161156979806">
         </div>
 
     </div>
@@ -63,6 +60,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
  }  
  .footer__content{
     width:100%;
@@ -79,7 +77,8 @@
  } 
  .footer__content__social{
      display:flex;
-     justify-content:between;
+     justify-content:start;
+     width:100%;
  }
  ul{
     list-style: none;
@@ -102,15 +101,24 @@
     padding:5rem 0;
     border-bottom: 1px #ffeee9 solid;
 }
+.footer__content__bottom{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    padding-top:5rem;
+
+}
 .footer__content__logo{
     margin:1rem;
     max-width:250px;
-}
-.footer__content__copywrite{
-    padding-top:5rem
-}
+} 
 .footer__content__copywrite p{
     margin:0px;
+}
+.footer__content__social__item svg{
+    height:3.5rem;
+    width:3.5rem;
+    margin-left:1rem;
 }
 </style>
 
@@ -127,16 +135,6 @@
             "type":"image_picker",
             "id":"logo",
             "label":"Logo"
-        },
-        {
-            "type": "range",
-            "id": "logo_width",
-            "min": 50,
-            "max": 250,
-            "step": 10,
-            "default": 200,
-            "label":"Logo width",
-            "unit":"px"
         }
     ],
     "presets": [{

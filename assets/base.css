@@ -2051,6 +2051,10 @@ details-disclosure > details {
     width: 100%;
   }
 }
+.button {
+  border: 2px solid #000;
+}
+
 /*# sourceMappingURL=base.scss.map */
 
 /*# sourceMappingURL=base.css.map */
