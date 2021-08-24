@@ -81,11 +81,22 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "1629786547dab548f1": {
+      "type": "bodyfx-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-min.png",
+        "heading": "WELCOME TO BODY FX STORE",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in arcu diam. Maecenas eleif end posuere elit ut placerat. Ut sit amet semper nunc tincidunt vestibulum.",
+        "bold_heading": true,
+        "underline_heading": true
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "1629786547dab548f1"
   ]
 }
