@@ -1646,7 +1646,7 @@ input[type="checkbox"] {
   padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1120px) {
   .header {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1719,7 +1719,7 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1120px) {
   .header__heading-link {
     margin-left: -0.75rem;
   }
@@ -1767,39 +1767,6 @@ input[type="checkbox"] {
   width: 2rem;
   fill: none;
   vertical-align: middle;
-}
-
-.header__icon,
-.header__icon--cart .icon {
-  display: none;
-  height: 4.4rem;
-  font-size: 1.25rem;
-  text-decoration: none;
-  //   width: 4.4rem;
-}
-
-.header__icon--cart {
-  position: relative;
-  text-decoration: none;
-
-  &-badge {
-    font-weight: 500;
-    font-size: 0.75rem;
-    background-color: #ff001d;
-    color: #fff;
-    height: 1.56rem;
-    width: 1.56rem;
-    border-radius: 0.78rem;
-    padding: 1px;
-  }
-  //   margin-right: -1.2rem;
-}
-.header__divider {
-  border-left: 2px solid black;
-  color: white;
-  height: 2rem;
-  margin: auto;
-  padding: 0 0.75rem;
 }
 @media screen and (max-width: 989px) {
   menu-drawer ~ .header__icons .header__icon--account {
@@ -1934,7 +1901,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   margin-left: 0;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1120px) {
   .header__inline-menu {
     display: block;
   }
@@ -2038,6 +2005,77 @@ details-disclosure > details {
 @font-face {
   font-family: "LexendDeca";
   src: url("LexendDeca-Regular.tff") format("tff");
+}
+.header__icon--cart {
+  position: relative;
+  text-decoration: none;
+
+  &-badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+    background-color: #ff001d;
+    color: #fff;
+    height: 1.56rem;
+    width: 1.56rem;
+    border-radius: 0.78rem;
+    padding: 1px;
+  }
+}
+.header__divider {
+  border-left: 2px solid black;
+  color: white;
+  height: 2rem;
+  margin: auto;
+  padding: 0 0.75rem;
+}
+
+.header__icon,
+.header__icon--cart .icon {
+  display: none;
+  height: 4.4rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+
+  //   width: 4.4rem;
+}
+
+@media only screen and (max-width: 1120px) {
+  .header__icon {
+    &--cart {
+      & .icon {
+        display: block;
+        width: 4.4rem;
+      }
+    }
+  }
+  .header__divider {
+    display: none;
+  }
+  #cart-icon-bubble > span.cart-label {
+    display: none;
+  }
+  .cart-count-bubble {
+    position: absolute;
+    top: 6px;
+  }
+  #shopify-section-header
+    > sticky-header
+    > header
+    > header-drawer
+    > details
+    > summary {
+    display: block;
+  }
+  #shopify-section-header
+    > sticky-header
+    > header
+    > header-drawer
+    > details
+    > summary
+    > span {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=base.scss.map */
