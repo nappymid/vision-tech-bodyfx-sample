@@ -110,7 +110,6 @@
   .banner__content {
     padding-bottom: 5rem;
     padding-top: 5rem;
-    width: 100%;
   }
 }
 
@@ -177,6 +176,9 @@
   }
 
   .banner--stacked .banner__box {
+    width: 100%;
+  }
+  .banner__content {
     width: 100%;
   }
 }
