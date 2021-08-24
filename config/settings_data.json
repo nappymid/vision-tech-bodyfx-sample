@@ -56,6 +56,14 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "bodyfx-footer": {
+        "type": "bodyfx-footer",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/footer-image.png",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_width": 160
+        }
       }
     },
     "content_for_index": [
