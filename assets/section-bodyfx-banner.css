@@ -179,6 +179,7 @@
     width: 100%;
   }
   .banner__content {
+    padding: 0 2rem;
     width: 100%;
   }
 }
