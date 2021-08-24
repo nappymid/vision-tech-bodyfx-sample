@@ -1,0 +1,147 @@
+<footer class="footer" style="background-image:url({{section.settings.image | img_url:'1900x'}})" >
+    {% comment %} {%- if section.settings.image != blank -%}
+        <img 
+            class="footer__background"
+            src="{{section.settings.image | img_url : '1900x'}}"
+        >
+    {% endif %} {% endcomment %}
+
+    <div class="footer__content footer__content__top page_width">
+        <div class="footer__content footer__content__logo">
+            {%- if section.settings.logo != blank -%}
+                {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+    
+                <img
+                  src="{{ section.settings.logo | img_url: '210x' }}"
+                  loading="lazy"
+                  class="footer__content footer__content-logo" 
+                  alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+                >
+            {% endif %}
+         
+        </div>
+
+        <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="/blogs/info/about"> About </a></li>
+            <li><a href="/blogs"> Blog </a></li>
+        </ul>
+        <ul>
+            <li><a href="/" > Testimonials </a></li>
+            <li><a href="/blogs/info/about"> Support </a></li>
+            <li><a href="/account/login"> Login </a></li>
+        </ul>
+        <p>Lorem60</p>
+    </div>
+    <div class="footer__content footer__content__bottom">
+        <div class="footer__content footer__content__social">
+
+        </div>
+        <div class="footer__content footer__content__copywrite">
+            <div>
+                <a href="/blogs/info/privacy-policy">Privacy Policy</a>
+                <a href="/blogs/info/terms-and-conditions">Terms & Conditions</a>
+            </div>
+            <p>Copyright 2020 Bravado Ventures LLC. All rights reserved.</p>
+        </div>
+        <div class="footer__content footer__content__vision-logo">
+            <img src="{{ 'vision-logo.png' | asset_img_url: '300x' }}">
+        </div>
+
+    </div>
+</footer>
+<style>
+.footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #929292;
+    text-align: center;
+    height:375px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }  
+ .footer__content{
+    width:100%;
+    max-width: 120rem;
+    margin: 0 auto;
+ }
+ 
+ footer > img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:auto;
+    height:100%;
+ } 
+ .footer__content__social{
+     display:flex;
+     justify-content:between;
+ }
+ ul{
+    list-style: none;
+    padding-left:0px;
+    text-align:left;
+ }
+ .footer__content a{
+    text-decoration:none; 
+    color: #929292;
+
+ }
+ .footer__content a:hover{
+    text-decoration:none; 
+    color: #fff;
+}
+.footer__content__top{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    padding:5rem 0;
+    border-bottom: 1px #ffeee9 solid;
+}
+.footer__content__logo{
+    margin:1rem;
+    max-width:250px;
+}
+.footer__content__copywrite{
+    padding-top:5rem
+}
+.footer__content__copywrite p{
+    margin:0px;
+}
+</style>
+
+{% schema %}
+{
+    "name":"bodyfx-footer",
+    "settings":[
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Background image"
+        },
+        {
+            "type":"image_picker",
+            "id":"logo",
+            "label":"Logo"
+        },
+        {
+            "type": "range",
+            "id": "logo_width",
+            "min": 50,
+            "max": 250,
+            "step": 10,
+            "default": 200,
+            "label":"Logo width",
+            "unit":"px"
+        }
+    ],
+    "presets": [{
+        "name": "Bodyfx Footer",
+        "category": "homepage"
+      }]
+}
+{% endschema %}

@@ -3,6 +3,7 @@
   position: relative;
   flex-direction: column;
   min-height: initial;
+  max-width: 150rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -95,15 +96,12 @@
 
 .banner__content {
   margin: auto 0;
-  padding-left: 5rem;
+  padding-left: 5vw;
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 50vw;
+  width: 30vw;
   justify-content: start;
-  &__heading {
-    font-size: 5rem;
-  }
 }
 
 @media screen and (min-width: 750px) {
