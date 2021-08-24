@@ -30,7 +30,7 @@
     </div> 
   {%- endif -%}
   <div class="banner__content " >
-      <h1 class="banner__content__heading" style="{%- if section.settings.underline_heading -%}border-bottom: 1px solid red;box-shadow: 0px -10px 0px red inset; {%- endif -%} {%- if section.settings.bold_heading -%} font-weight:900 {%- endif-%}">{{section.settings.heading}}</h1>
+      <h1 class="banner__content__heading" style="{%- if section.settings.underline_heading -%}border-bottom: 1px solid {{settings.colors_accent_1}};box-shadow: 0px -15px 0px {{settings.colors_accent_1}} inset; {%- endif -%} {%- if section.settings.bold_heading -%} font-weight:900 {%- endif-%}">{{section.settings.heading}}</h1>
       <p class="banner__content__text">{{section.settings.text}}</p>
   </div>
 </div>
