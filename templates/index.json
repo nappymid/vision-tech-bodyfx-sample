@@ -10,25 +10,11 @@
         "underline_heading": true
       }
     },
-    "16298812056176a161": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "most popular",
-        "collection": "frontpage",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
-    "1629877415b7f80f3b": {
+    "16298824552f1a69f8": {
       "type": "bodyfx-products-collection",
       "settings": {
-        "title": "Our products",
-        "collection": "frontpage",
+        "title": "Most popular",
+        "collection": "most-popular",
         "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": false,
@@ -38,25 +24,24 @@
         "show_name": true
       }
     },
-    "16298824552f1a69f8": {
+    "1629877415b7f80f3b": {
       "type": "bodyfx-products-collection",
       "settings": {
-        "title": "Most popular",
-        "collection": "most-popular",
-        "products_to_show": 3,
+        "title": "Our products",
+        "collection": "frontpage",
+        "products_to_show": 20,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
-        "show_name": false
+        "show_name": true
       }
     }
   },
   "order": [
     "1629786547dab548f1",
-    "16298812056176a161",
-    "1629877415b7f80f3b",
-    "16298824552f1a69f8"
+    "16298824552f1a69f8",
+    "1629877415b7f80f3b"
   ]
 }
