@@ -10,10 +10,24 @@
         "underline_heading": true
       }
     },
+    "16298812056176a161": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "most popular",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
     "1629877415b7f80f3b": {
       "type": "bodyfx-products-collection",
       "settings": {
-        "title": "Most popular",
+        "title": "Our products",
         "collection": "frontpage",
         "products_to_show": 4,
         "show_view_all": true,
@@ -27,6 +41,7 @@
   },
   "order": [
     "1629786547dab548f1",
+    "16298812056176a161",
     "1629877415b7f80f3b"
   ]
 }
