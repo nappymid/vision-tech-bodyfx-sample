@@ -2051,8 +2051,40 @@ details-disclosure > details {
     width: 100%;
   }
 }
-.button {
-  border: 2px solid #000;
+.button-bordered {
+  box-shadow: 5px 5px white, 6px 6px black, 4px 6px black, 6px 4px black;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.product-sale-badge {
+  position: absolute;
+  top: 5px;
+  right: -8px;
+}
+
+.card-wrapper {
+  padding: 30px 30px;
+  background-color: #f6f6f6;
+  height: 575px;
+}
+.card-wrapper a {
+  text-decoration: none;
+}
+
+.card-information a {
+  text-decoration: none;
+}
+.card-information a:hover {
+  text-decoration: none;
+}
+.card-information__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 80px;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=base.scss.map */
