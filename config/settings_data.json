@@ -61,8 +61,7 @@
         "type": "bodyfx-footer",
         "settings": {
           "image": "shopify:\/\/shop_images\/footer-image.png",
-          "logo": "shopify:\/\/shop_images\/logo.png",
-          "logo_width": 160
+          "logo": "shopify:\/\/shop_images\/logo.png"
         }
       }
     },
