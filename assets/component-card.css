@@ -3,9 +3,7 @@
   overflow: hidden;
   text-decoration: none;
 }
-.card-gray {
-  background-color: gray;
-}
+
 .card + .card-information {
   margin-top: 1.2rem;
 }
@@ -48,7 +46,7 @@
 }
 
 .card--text-only::before {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 100%;
 }
@@ -176,25 +174,10 @@
 .card-information__text {
   display: block;
   padding-right: 1.2rem;
-  padding-top: 1rem;
-  font-size: 2rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-}
-.card-information__text-description {
-  padding: 0 5px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.0625em;
-  min-height: 5rem;
-  overflow: hidden;
 }
 
 .card-information__wrapper {
   width: 100%;
-  height: 200px;
 }
 
 .card-information__wrapper > * {
