@@ -214,7 +214,6 @@ html.no-js .no-js-hidden {
 
   .card-wrapper {
     padding: 5px 5px;
-    height: 575px;
   }
 }
 @media screen and (min-width: 990px) {
@@ -2070,14 +2069,18 @@ details-disclosure > details {
 }
 
 .card-wrapper {
-  padding: 30px 30px;
+  padding: 1.8rem 1.8rem;
   background-color: #f6f6f6;
-  height: 575px;
 }
 .card-wrapper a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 750px) {
+  .card-wrapper {
+    height: auto;
+  }
+}
 .card-information a {
   text-decoration: none;
 }
@@ -2088,7 +2091,6 @@ details-disclosure > details {
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 80px;
   justify-content: space-between;
 }
 

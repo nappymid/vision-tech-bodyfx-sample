@@ -46,7 +46,7 @@
 }
 
 .card--text-only::before {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 100%;
 }

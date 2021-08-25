@@ -89,7 +89,7 @@
       <div class="card-information">
         <div class="card-information__wrapper">
           {%- if show_name -%}
-            <div class="card-information__text">{{ product_card_product.title }}</div>
+            <h2 class="card-information__text" style="{%- if product_card_product.description == blank -%} margin-bottom:6.3525rem; {%- endif -%}">{{ product_card_product.title }}</h2>
             <p class="card-information__text-description">{{ product_card_product.description  }}</p>
           {%- endif -%}
           {% comment %} TODO: metafield {% endcomment %}
