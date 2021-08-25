@@ -10,38 +10,23 @@
         "underline_heading": true
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
+    "1629877415b7f80f3b": {
+      "type": "bodyfx-products-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Most popular",
         "collection": "frontpage",
         "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
-    "1629801597f16cf5c2": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our Products",
-        "collection": "shirt-gears",
-        "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
-        "show_vendor": false
+        "show_name": true
       }
     }
   },
   "order": [
     "1629786547dab548f1",
-    "featured_products",
-    "1629801597f16cf5c2"
+    "1629877415b7f80f3b"
   ]
 }
