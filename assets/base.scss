@@ -211,6 +211,10 @@ html.no-js .no-js-hidden {
   .page-width-desktop {
     padding: 0;
   }
+  .card-wrapper {
+    padding: 5px 5px;
+    height: 575px;
+  }
 }
 @media screen and (min-width: 990px) {
   .page-width--narrow {
